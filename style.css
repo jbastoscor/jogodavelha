@@ -1,0 +1,43 @@
+.body {
+  font-family: optima, sans-serif;  /* fonte que achei melhor para destacar o nome */
+  display: flex; /* garante que os elementos filhos, ou seja, dentro da primeira <div>  sejam exibidos em linha pelo Flexbox */
+  justify-content: center; /* centraliza o conteúdo horizontalmente */
+  align-items: center; /* centraliza o conteúdo verticalmente */
+  height: 100vh; /* 100% da altura da tela */
+  margin: 0; /* remove a margem padrão do body entre os elementos, ou seja, o espaço entre o elemento e seus vizinhos (como outros elementos ao redor ou a borda do contêiner)  */
+  background-color: #f0f0f0; /* cor de fundo da pág! */
+} 
+.container { /* estilo do contêiner */
+  text-align: center; /* centraliza o texto que está no elemento do container!!*/
+}
+
+.h1 { /* estilo do título */
+  font-size: 3em; /* tamanho da fonte */
+  color: #333; /* cor do texto */
+  margin-bottom: 20px; /* margem do botão */
+}
+
+.board { /* estilo do tabuleiro  - BOARD sig TABULEIRO*/
+  display: grid; /* exibe os elementos em uma grade */
+  grid-template-columns: repeat(3, 1fr); /* cria 3 colunas com largura igual. "1fraction" - Cada uma dessas colunas ocupará uma fração igual do espaço disponível no contêiner*/
+  grid-gap: 10px; /* espaço entre os elementos */
+  max-width: 600px; /* largura máxima do tabuleiro */
+  margin: 0 auto; /* centraliza o tabuleiro horizontalmente */
+}
+
+.status { /* estilo do status */
+  font-size: 2em; /* tamanho da fonte */
+  color: #333; /* cor do texto */
+  margin-top:  20px; /* margem do botão */
+}
+
+.restart { /* estilo do botão de reiniciar */
+  background-color: #333; /* cor de fundo do botão */
+  color: #fff; /* cor do texto */
+  font-size: 1.5em; /* tamanho da fonte */
+  padding: 10px 20px; /* preenchimento do botão */
+  border: none; /* remove a borda do botão */
+  border-radius: 5px; /* borda arredondada do botão */
+  cursor: pointer; /* cursor do mouse */
+  margin-top: 20px; /* margem do botão */
+}
